@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Space Shooter (Unreal Engine)
 
 Proyecto académico desarrollado con Unreal Engine como parte de la actividad
@@ -70,3 +71,7 @@ detectar mejoras futuras como:
 
 Proyecto desarrollado con fines académicos y de aprendizaje personal.
 
+=======
+# UNIR_Master_ArqProgVideojuegos_UE5_SpaceShooter
+Primera Actividad curso Arquitectura y Programación de Videojuegos con Unreal Engine
+>>>>>>> fa40e46fd72636d755fd594a1fd6d932397d1ee1
