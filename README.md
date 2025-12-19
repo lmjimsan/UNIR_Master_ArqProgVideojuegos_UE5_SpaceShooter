@@ -1,77 +1,77 @@
-<<<<<<< HEAD
-# Space Shooter (Unreal Engine)
+# Space Shooter - Unreal Engine 5
 
-Proyecto académico desarrollado con Unreal Engine como parte de la actividad
-**“Space Shooter completo”**.
-
-Se trata de un prototipo de shooter espacial en vista top-down, con cámara
-ortográfica fija, centrado en supervivencia y obtención de puntuación.
+Shooter espacial top-down desarrollado como proyecto académico en Unreal Engine 5, enfocado en supervivencia y acumulación de puntos.
 
 ---
 
-## 🎮 Descripción del juego
+## 🎮 Flujo del juego
 
-El jugador controla una nave espacial cuyo objetivo es sobrevivir el mayor
-tiempo posible mientras elimina enemigos y acumula puntos.
+### Pantallas y transiciones
+- **Start Screen**: Pantalla inicial donde el jugador inicia la partida
+- **Playing**: Zona de juego activa donde el jugador controla la nave
+- **Game Over**: Pantalla de fin de partida al perder todas las vidas
 
-El juego presenta una estructura actualmente infinita, aunque está diseñado
-para evolucionar hacia un sistema por niveles.
+Las transiciones entre pantallas son automáticas y sin interrupción del flujo de juego.
 
----
-
-## 🧩 Mecánicas implementadas
-
-- Movimiento libre en el plano
-- Disparo principal
-- Sistema combinado de **vidas + salud**
-- Respawn del jugador con tiempo de inmunidad
-- Gestión de estados del juego:
-  - Start Screen
-  - Playing
-  - Game Over
-- HUD con:
-  - Vidas
-  - Bombas
-  - Puntuación
+### Dinámica principal
+El jugador controla una nave en un plano infinito, eliminando enemigos y evitando obstáculos para acumular la máxima puntuación antes de ser destruido.
 
 ---
 
-## 🛠️ Tecnologías
+## 🕹️ Controles
 
-- Unreal Engine 5
-- Blueprints
-- Enhanced Input System
-- Widgets (UMG)
-
----
-
-## 🧪 Testeo e iteración
-
-El prototipo ha sido sometido a playtesting externo, lo que ha permitido
-detectar mejoras futuras como:
-
-- Cápsulas de potenciación (velocidad, disparo, escudos, vida)
-- Mayor variedad de enemigos
-- Oleadas definidas
-- Power-ups de la nave
+- **Movimiento**: Joystick analógico / WASD - desplazamiento libre en 8 direcciones
+- **Disparo**: Botón accionable (gamepad/ratón) - disparo continuo automático
+- **Mecánica de inmunidad**: El jugador tiene 2 segundos de inmunidad tras recibir daño
 
 ---
 
-## 🚀 Futuras mejoras
+## 💥 Sistema de colisiones y daño
 
-- Sistema de niveles
-- Enemigos de mayor tamaño
-- Más tipos de disparo
-- Integración de power-ups
-- Posible adaptación a plataformas móviles o VR
+### Enemigos
+- **Naves enemigas**: Causan daño al colisionar + disparan proyectiles contra el jugador
+- **Meteoritos**: Causan daño solo por colisión (no disparan ni se destruyen)
+
+### Jugador
+- Sistema combinado de **vidas + salud**: El jugador posee 3 vidas
+- Al recibir daño, pierde vida/salud y entra en estado de inmunidad
+- Al perder todas las vidas → **Game Over**
 
 ---
 
-## 👤 Autor
+## ⭐ Sistema de puntuación y daño
 
-Proyecto desarrollado con fines académicos y de aprendizaje personal.
+### Asignación de puntos
+- **Enemigos destruidos**: +100 puntos por nave enemiga eliminada
+- **Meteoritos evitados/destruidos**: +50 puntos
 
-=======
-# UNIR_Master_ArqProgVideojuegos_UE5_SpaceShooter
-Primera Actividad curso Arquitectura y Programación de Videojuegos con Unreal Engine
->>>>>>> fa40e46fd72636d755fd594a1fd6d932397d1ee1
+### Asignación de daño
+- **Colisión con navío enemigo**: 1 daño al jugador
+- **Impacto de proyectil enemigo**: 1 daño al jugador
+- **Colisión con meteorito**: 1 daño al jugador
+- **Recuperación**: El jugador regenera 1 punto de salud cada 5 segundos en juego
+
+---
+
+## 🛠️ Tecnología
+
+- **Motor**: Unreal Engine 5
+- **Programación**: Blueprints (visual scripting)
+- **Input**: Enhanced Input System
+- **UI**: UMG (Widgets)
+- **Vista**: Top-down con cámara ortográfica fija
+
+---
+
+## 📋 HUD
+
+El jugador visualiza en todo momento:
+- **Vidas**: Contador de vidas restantes
+- **Munición**: Disponibilidad de bombas especiales
+- **Puntuación**: Puntos acumulados en la partida
+
+---
+
+## 🚀 Versión
+
+Prototipo funcional - En desarrollo
